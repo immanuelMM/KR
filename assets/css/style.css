@@ -382,11 +382,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 #hero h1 {
   margin: 0 0 10px 0;
-  font-size: 48px;
+  font-size: 75px;
   font-weight: 700;
   line-height: 56px;
   text-transform: uppercase;
   color: #fff;
+  background-image: -webkit-gradient( linear, left top, right top, color-stop(0.03, rgb(127 95 32)), color-stop(0.52, rgb(240,255,127)), color-stop(0.76, rgb(42,24,173)) );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 #hero h2 {
   color: #eee;
