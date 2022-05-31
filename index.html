@@ -34,6 +34,7 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   <style>
+    .hidden {display:none} 
     .bg-video-wrap {
   position: relative;
   overflow: hidden;
@@ -716,9 +717,15 @@ video {
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#collection">Collection</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" id="nav-hero">Home</a></li>
+          <!-- <li><a class="nav-link scrollto" href="#about" id="nav-about">About</a></li>
+          <li><a class="nav-link scrollto" href="#collection" id="nav-collection">Collection</a></li> -->
+          <li class="dropdown"><a href="#"><span>Menu</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a class="nav-link scrollto" href="#about" id="nav-about">About</a></li>
+              <li><a class="nav-link scrollto" href="#collection" id="nav-collection">My Collection</a></li>
+            </ul>
+          </li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -727,23 +734,34 @@ video {
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center hero">
-    <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
-      <h1>Discover</h1>
-      <h2>A rare design created by KIRSTEN</h2>
-      <a href="#about" class="btn-get-started scrollto">Get Started</a>
-    </div>
-  </section><!-- End Hero -->
+  <div id="mainhero">
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container position-relative" data-aos="fade-up" data-aos-delay="500">
+        <h1>Discover</h1>
+        <h2>A rare design created by KIRSTEN</h2>
+        <a href="#about" class="btn-get-started scrollto">Get Started</a>
+        
+      </div>
+      
+    </section><!-- End Hero -->
+    <div class="bg-video-wrap">
+      <video src="assets/img/4k-24p-kristen_regaldo_cancer_benefit_promo_in_washington_d.c.__2021 (720p).mp4" loop muted autoplay>
+      </video>
 
-  <main id="main">
+      <h1>Fullscreen video background
+      </h1>
+    </div>
+  </div>
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about hidden" style="padding: 60px;">
+          <!-- ======= Breadcrumbs ======= -->
+
       <div class="container">
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
-            <img src="assets/img/Bridal1.png" class="img-fluid" alt="">
+            <img src="assets/img/KR.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3 style="visibility: hidden;">Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
@@ -788,7 +806,7 @@ video {
     </section><!-- End About Section -->
 
     <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us">
+    <section id="why-us" class="why-us hidden">
       <div class="container">
 
         <div class="row">
@@ -860,7 +878,7 @@ video {
     <!-- End Clients Section -->
 
     <!-- ======= collection Section ======= -->
-    <section id="collection" class="services">
+    <section id="collection" class="services hidden">
       <div class="bg-video-wrap">
         <video src="assets/img/catwalk_-_in.mp4" loop muted autoplay>
         </video>
@@ -1568,8 +1586,8 @@ video {
           <div class="col-lg-2 col-md-6 footer-links">
             <h4></h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms-of-service.html">Terms of service</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="terms-of-service.html">Privacy policy</a></li>
             </ul>
           </div>
 
@@ -1625,6 +1643,36 @@ video {
     //     $("#collection").fadeIn('slow');
     //   });
     // });
+    $(document).ready(function(){
+      $('a#nav-hero').click(function(e) {
+        e.preventDefault();
+        $('section#about').hide();
+        $('section#collection').hide(); 
+        $('section#why-us').hide();   
+        $('#mainhero').fadeIn();    
+        return false;
+      });
+
+        
+      $('a#nav-about').click(function(e) {
+        e.preventDefault();
+        $('#mainhero').hide();
+        $('section#collection').hide();  
+        $('section#about').fadeIn();
+        $('section#why-us').fadeIn();     
+        return false;  
+      });   
+
+      $('a#nav-collection').click(function(e) {
+        e.preventDefault();
+        $('#mainhero').hide();
+        $('section#about').hide(); 
+        $('section#why-us').hide();  
+        $('section#collection').fadeIn(3000);      
+        return false;  
+      });   
+    }); 
+
   </script>
 
 </body>
