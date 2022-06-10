@@ -26,7 +26,27 @@
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
-  
+  <link rel="stylesheet" href="carousel.css">
+  <link rel="stylesheet" href="dist/style.css">
+  <style>
+    .carousel {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .example-box {
+      margin-bottom: 50px;
+      /* box-shadow: 0 2px 5px rgba(0,0,0,.4); */
+      padding: 1em;
+      border-radius: 12px;
+      border: 1px solid #DFDFDF;
+    }
+    .example-box h2 {
+      margin: 0 0 20px !important;
+    }
+    .text-center {
+      text-align: center;
+    }
+  </style>
   
 
   <!-- =======================================================
@@ -44,14 +64,13 @@
   <section id="topbar" class="d-flex align-items-center">
     <div class="container d-flex justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
+        <i class="bi bi-envelope-fill"></i><a href="mailto:kirstengowns@yahoo.com">Email: kirstengowns@yahoo.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> Phone: +1 (786)-2105252
       </div>
       <div class="social-links d-none d-md-block">
-        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+        <a href="https://twitter.com/kirstenregalado" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="https://www.facebook.com/kirstenregaladofashion" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.instagram.com/kirstenregalado/" class="instagram"><i class="bi bi-instagram"></i></a>
       </div>
     </div>
   </section>
@@ -67,7 +86,7 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="../index.html">Home</a></li>
+          <li><a class="nav-link scrollto active" href="../index.html">Back</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -83,7 +102,7 @@
 
         <ol>
           <li><a href="../index.html">Home</a></li>
-          <li>Design Details</li>
+          <li>Collection</li>
         </ol>
         <h2>Design Details</h2>
 
@@ -152,330 +171,142 @@
             <a href="https://opensea.io/assets/ethereum/0x495f947276749ce646f68ac8c248420045cb7b5e/1550317135662083273644011073873503442573039423477836680134594102945669709825"  target="_blank" class="btn btn-outline-primary">BUY</a>
 
         </div>
-        
-        <div class="section-title">
-        </div>
-        <div class="col-lg-2">
-        </div>
-        <div class="col-lg-2">
-                <!-- The Modal -->
-      <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <div class="modal-content">
-        <div class="portfolio-details-slider1 swiper">
-          <div class="swiper-wrapper align-items-center">
-
-            <div class="swiper-slide">
-              <img  src="../assets/img/lupine/Snapshots - Lupine_00000.png">
-            </div>
-    
-            <div class="swiper-slide">
-              <img src="../assets/img/lupine/Snapshots - Lupine_00001.png">
-            </div>
-
-            <div class="swiper-slide">
-              <img src="../assets/img/lupine/Snapshots - Lupine_00002.png">
-            </div>
-
-            <div class="swiper-slide">
-              <img  src="../assets/img/lupine/Snapshots - Lupine_00003.png">
-            </div>
-    
-            <div class="swiper-slide">
-              <img src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-            </div>
+        <div class="gallery">
+          <div class="gallery-container">
+            <img class="gallery-item gallery-item-1" src="../assets/img/lupine/Snapshots - Lupine_00000.png" data-index="1">
+            <img class="gallery-item gallery-item-2" src="../assets/img/lupine/Snapshots - Lupine_00001.png" data-index="2">
+            <img class="gallery-item gallery-item-3" src="../assets/img/lupine/Snapshots - Lupine_00002.png" data-index="3">
+            <img class="gallery-item gallery-item-4" src="../assets/img/lupine/Snapshots - Lupine_00003.png" data-index="4">
+            <img class="gallery-item gallery-item-5" src="../assets/img/lupine/Snapshots - Lupine_00004.png" data-index="5">
+            <img class="gallery-item gallery-item-5" src="../assets/img/lupine/Snapshots - Lupine_00005.png" data-index="6">
+            <img class="gallery-item gallery-item-5" src="../assets/img/lupine/Snapshots - Lupine_00006.png" data-index="6">
           </div>
-          <div class="swiper-pagination"></div>
+          <div class="gallery-controls"></div>
         </div>
-      </div>
-      </div>
-          <div class="portfolio-details-slider1 swiper" id="myImg" >
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-              </div>
+          <hr>
+          <div class="example-box">
+            <div class="section-title">
+              <span>My Collection</span>
+              <h2>My Collection</h2>
+              <p>Earth Collection is a collection of gowns individually designed by Regalado</p>
       
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00003.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00002.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00001.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-              </div>
-
             </div>
-            <div class="swiper-pagination"></div>
-          </div>
-        </div>
-  
-        <div class="col-lg-2">
-          <div class="portfolio-details-slider1 swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00000.png">
-              </div>
       
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00001.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00002.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00003.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-              </div>
-
-            </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="portfolio-details-slider1 swiper">
-            <div class="swiper-wrapper align-items-center">
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00002.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00000.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00001.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00003.png">
-              </div>
-
-            </div>
-           
-          </div>
-        </div>
-        <div class="col-lg-2">
-          <div class="portfolio-details-slider1 swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00000.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00001.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00002.png">
-              </div>
-  
-              <div class="swiper-slide">
-                <img  src="../assets/img/lupine/Snapshots - Lupine_00003.png">
-              </div>
-      
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00004.png">
-              </div>
-
-            </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
-          </div>
-        </div>
-        <hr>
-        <div class="section-title">
-          <span>My Collection</span>
-          <h2>My Collection</h2>
-          <p>Earth Collection is a collection of gowns individually designed by Regalado</p>
-        </div>
-        <div class="col-lg-3">
-          <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img src="../assets/img/colorful/Snapshots - Colorful Marine_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>colorful-marine</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/colorful-marine.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+              <div class="carousel-multiple-items">
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/colorful/Snapshots - Colorful Marine_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>colorful-marine</h3>
+                        <a href="../gown/colorful-marine.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                  
                   </div>
-              
-              </div>
-
-              <div class="swiper-slide">
-                <img src="../assets/img/for_animation_-_colorful_marine2.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>island-leaves</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/island-leaves.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/island/Turntable - Island Leaves_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>island-leaves</h3>
+                        <a href="../gown/island-leaves.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                 
                   </div>
-             
-              </div>
-
-            </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img src="../assets/img/lupine/Snapshots - Lupine_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>lupine</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/lupine.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/lupine/Snapshots - Lupine_00001.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>lupine</h3>
+                        <a href="../gown/lupine.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                  
                   </div>
-              
-              </div>
-
-              
-              <div class="swiper-slide">
-                <img src="../assets/img/lava/Snapshots - Lava of Iceland_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>lava</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/lava.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
-                  </div> 
-              </div>
-
-  
-            </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
-          </div>
-        </div>
-        <div class="col-lg-3">
-          <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img src="../assets/img/for_animation_-_colorful_marine2.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>St-Lucia-Ms-Universe</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/St-Lucia-Ms-Universe.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/lava/Snapshots - Lava of Iceland_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>lava</h3>
+                        <a href="../gown/lava.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div> 
                   </div>
-              
-              </div>
-
-              <div class="swiper-slide">
-                <img src="../assets/img/warriors/Snapshots - Warrior Princess_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>Warrior-Princess</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/Warrior-Princess.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/st.lucia/Turntable - St Lucia_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>St-Lucia-Ms-Universe</h3>
+                        <a href="../gown/St-Lucia-Ms-Universe.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                  
                   </div>
-             
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/warriors/Snapshots - Warrior Princess_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>Warrior-Princess</h3>
+                        <a href="../gown/Warrior-Princess.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                 
+                  </div>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/vines/Turntable - Vines_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>Vines</h3>
+                        <a href="../gown/Vines.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>         
+                  </div>
+                </div>
+                <div>
+                  <div class="swiper-slide box">
+                    <img src="../assets/img/pink/Turntable - The Promise_00000.png" alt="">
+                      <div class="portfolio-info">
+                        <h3>Pink-Gown</h3>
+                        <a href="../gown/Pink-Gown.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
+                      </div>
+                
+                  </div>
+                </div>
               </div>
             </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
           </div>
         </div>
-        <div class="col-lg-3">
-          <div class="portfolio-details-slider swiper">
-            <div class="swiper-wrapper align-items-center">
-
-              <div class="swiper-slide">
-                <img src="../assets/img/vines/Snapshots - Vines_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>Vines</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/Vines.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
-                  </div>         
-              </div>
-              <div class="swiper-slide">
-                <img src="../assets/img/pink/Snapshots - The Promise_00000.png" alt="">
-                  <div class="portfolio-info">
-                    <h3>Pink-Gown</h3>
-                    <ul>
-                      <li><strong>Etherium</strong>: 0.00 ETH</li>
-                      <li><strong>Dollar</strong>: 0</li>
-                    </ul>
-                    <a href="../gown/Pink-Gown.html" class="btn btn-primary"><i class="bi bi-eye"></i></a>
-                  </div>
-            
-              </div>
-            </div>
-            <div class="swiper-pagination" style="visibility: hidden;"></div>
-          </div>
-        </div>
-        </div>
-      </div>
-    
-    </section><!-- End Portfolio Details Section -->
-
-  </main><!-- End #main -->
+      
+      </section><!-- End Portfolio Details Section -->
+      
+      </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
-
           <div class="col-lg-4 col-md-6">
             <div class="footer-info">
               <h1 class="logo"><a href="index.html"><img src="../assets/img/logo.png" height="200px"></a></h1>
               <p>
-                A108 Adam Street <br>
-                NY 535022, USA<br><br>
-                <strong>Phone:</strong> +1 5589 55488 55<br>
-                <strong>Email:</strong> info@example.com<br>
+                Miami <br>
+               Florida, USA<br><br>
+                <strong>Phone:</strong> +1 (786) 210-5252<br>
+                <strong>Email:</strong> kirstengowns@yahoo.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://twitter.com/kirstenregalado" class="twitter"><i class="bi bi-twitter"></i></a>
+                <a href="https://www.facebook.com/kirstenregaladofashion" class="facebook"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/kirstenregalado/" class="instagram"><i class="bi bi-instagram"></i></a>
               </div>
             </div>
           </div>
-
           <div class="col-lg-2 col-md-6 footer-links">
             <h4>Useful Links</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Collection</a></li>
              
             </ul>
           </div>
@@ -490,7 +321,7 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4>Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+            <p>We are working on our newsletter. Please, let us know if you are interested, email us at info@kirstenregalado.com</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
@@ -506,11 +337,7 @@
         &copy; Copyright <strong><span>NFT</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/day-multipurpose-html-template-for-free/ -->
-        Designed by <a href="https://bootstrapmade.com/">OK</a>
+          Designed by <a href="http://oneknowledgeconsulting.com/">OK</a>       
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -584,6 +411,14 @@
   span.onclick = function() { 
     modal.style.display = "none";
   }
+  </script>
+  <script src="carousel.js"></script>
+  <script src="dist/index.min.js"></script>
+  <script>
+    new ElderCarousel('.carousel-single-item', { items: 1, infinite: false })
+  
+    new ElderCarousel('.carousel-multiple-items', { items: 3 })
+  
   </script>
 </body>
 
